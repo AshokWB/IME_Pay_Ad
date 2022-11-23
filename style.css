@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+header{
+    width: 100vw;
+    padding: 1rem 2rem;
+    top: 0;
+    z-index: 9999999999;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+h1{
+    font-size: 4rem;
+    color: #ed1c24;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 1.5rem 0 0 0;
+}
+h2{
+    font-size: 1.76rem;
+    color: #19193b;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: -1.5rem;
+}
+.cards{
+    position: relative;
+}
+.card-wrapper{
+    position: relative;
+    height: 320px;
+    width: 500px;
+    background-color: rgb(70, 70, 70);
+    background-image: url(./assets/flower_bg_from_unsplash.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: inset 9px 6px 20px 0px rgb(161 161 161 / 5%), 
+                12px 20px 20px 0px rgb(233 75 75 / 18%);
+    padding: 1rem 2rem;
+    margin: 3rem;
+    transform: rotate3d(1, 1, 1, 25deg);
+    z-index: 11;
+    transition: all 200ms ease;
+}
+.dotted-line-left{
+    position: absolute;
+    width: 137px;
+    left: -107px;
+    top: -79px;
+    transform: rotateZ(6deg);
+    z-index: -5;
+    transition: all 200ms ease;
+
+}
+.gift-box{
+    position:absolute;
+    width: 200px;
+    top: -101px;
+    right: -93px;
+    transition: all 200ms ease;
+
+}
+.card-wrapper2{
+    position: absolute;
+    height: 320px;
+    width: 500px;
+    background-color: rgb(70, 70, 70);
+    background-image: url(./assets/flower_bg_from_unsplash_dark.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 3px 11px 20px rgba(70, 70, 70, .2);
+    padding: 1rem 2rem;
+    margin: -6rem 0 0 3rem;
+    transform: rotate3d(1,0,1, 335deg);
+    z-index: -100;
+    transition: all 200ms ease;
+
+}
+.dotted-line-right{
+    position: absolute;
+    width: 117px;
+    right: -146px;
+    top: 3px;
+    transform: rotateZ(20deg);
+    z-index: -5;
+    transition: all 200ms ease;
+
+}
+.card-logo{
+    margin: 1rem 0 0 0;
+    width: 80px;
+    transition: all 200ms ease;
+
+}
+
+.card-logo img{
+    width: 100%;
+    transition: all 200ms ease;
+
+}
+
+.chip-lable{
+    margin: 2rem 0 0 0;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    transition: all 200ms ease;
+
+}
+
+.chip{
+    width: 50px;
+}
+.nfc{
+    margin: 0 0 0 1rem;
+    width: 30px;
+}
+
+.card-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 2rem 0 0 0;
+    transition: all 200ms ease;
+
+}
+.card-number2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 2rem 0 0 0;
+    transition: all 200ms ease;
+
+}
+.card-number span{
+    text-shadow: 1px 1px 0px rgb(255 118 118 / 80%);
+    margin: 0rem .6rem;
+    transition: all 200ms ease;
+
+}
+.card-number2 span{
+    text-shadow: 1px 1px 0px rgba(56, 56, 56, 0.8);
+    margin: 0rem .6rem;
+    transition: all 200ms ease;
+
+}
+.validity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0 0 0;
+    transition: all 200ms ease;
+
+}
+.valid-lable{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease;
+
+}
+.valid-upto{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 10px;
+    width: 50px;
+}
+.valid-upto span{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.valid-upto span.upto{
+    margin: -0.6rem 0 0 0;
+}
+.valid-lable span.date{
+    position: absolute;
+    left: 65px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.valid-lable span.virtual{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e2e2e2;
+}
+.visa{
+    width: 90px;
+}
+.footer{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: 0;
+    bottom: 0;
+    margin: 0 2rem 1rem 0;
+
+}
+.verified {
+    color: #ed1c24;
+    cursor: pointer;
+}
+@media screen and (max-width:911px){
+    .footer{
+        display: none;
+    }
+}
+@media screen and (max-width:728px){
+    body{
+        scale: 0.9;
+        max-width: 90vw;
+    }
+    main{position: relative;
+    }
+    .cards{
+        position: absolute;
+        margin-left: 1rem;
+        left: 50%;
+        top: 230%;
+        transform: translate(-50%, -50%);
+    }
+    header img{
+        width: 100px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 1.26rem;
+        margin: -1rem 0 0 0;
+    }
+    .card-wrapper,
+    .card-wrapper2{
+        max-height: 220px;
+        max-width: 340px;
+    }
+    .card-wrapper{
+        z-index: 100;
+    }
+    .card-wrapper2{
+        margin:  1.4rem 13px 14px 54px;;
+        z-index: -100;
+        transform: rotate3d(1,0,1, 335deg);
+
+    }
+    .dotted-line-left{
+        position: absolute;
+        width: 74px;
+        left: -68px;
+        top: -37px;
+        transform: rotateZ(1deg);
+        z-index: -5;
+    }
+    .gift-box{
+        position:absolute;
+        width: 160px;
+        top: -91px;
+        right: -73px;
+    }
+    .dotted-line-right{
+        position: absolute;
+        width: 60px;
+        right: -72px;
+        top: -18px;
+        transform: rotateZ(11deg);
+        z-index: -5;
+    }
+    .card-logo{
+        width: 60px;
+    }
+    .chip{
+        width: 40px;
+    }
+    .nfc{
+        width: 25px;
+    }
+    .card-number,
+    .card-number2{
+        font-size: 1.3rem;
+        margin: 1rem 0 0 0;
+    }
+    .valid-upto span{
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .7rem;
+    }
+    .valid-upto span.upto{
+        margin: -.4rem 0 0 0;
+    }
+    .valid-lable span.date{
+        position: absolute;
+        left: 65px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .visa{
+        width: 70px;
+    }
+    .valid-lable span.virtual{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #e2e2e2;
+    }
+    .footer{
+        display: none;
+    }
+}
